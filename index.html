@@ -6,6 +6,11 @@
     <title>Instagram Widget</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/instafeed.js"></script>
+</head>
+<body>
+    <div class="instagram-widget" id="instagram-widget">
+        <!-- Las fotos se cargarán aquí -->
+    </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var feed = new Instafeed({
@@ -17,10 +22,5 @@
             feed.run();
         });
     </script>
-</head>
-<body>
-    <div class="instagram-widget" id="instagram-widget">
-        <!-- Las fotos se cargarán aquí -->
-    </div>
 </body>
 </html>
