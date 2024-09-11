@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Widget</title>
+    <title>Instagram Widget</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/instafeed.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var feed = new Instafeed({
+                userId: '8190244199',  // Reemplaza con tu ID de usuario
+                limit: 6,
+                template: '<a href="{{link}}" target="_blank"><img src="{{image}}" /></a>',
+                resolution: 'standard_resolution'
+            });
+            feed.run();
+        });
+    </script>
 </head>
 <body>
-    <div id="widget-container">
-        <h1>My Custom Widget</h1>
-        <p>This is a simple widget example.</p>
+    <div class="instagram-widget" id="instagram-widget">
+        <!-- Las fotos se cargarán aquí -->
     </div>
-
-    <script src="script.js"></script>
 </body>
 </html>

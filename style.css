@@ -1,8 +1,11 @@
-#widget-container {
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border: 1px solid #ccc;
-    width: 300px;
-    margin: 0 auto;
+.instagram-widget img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.instagram-widget img:hover {
+    transform: scale(1.1);
 }
